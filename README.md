@@ -52,6 +52,8 @@ Paired differences average the five seed outcomes within each task, then resampl
 
 Each run saves `config.json`, `preregistration.json`, `tasks.json`, `traces.jsonl`, `report.json`, and `SHA256SUMS.json`; newer runs also record source hashes. The manifest hashes execution artifacts present at run completion; HTML/SVG are derived afterward and not covered by that manifest. New JSONL traces contain typed attempt outcomes, pre/post versions, state effects, unsafe proposals and scheduled versus emitted faults. Historical traces retain their originally captured fields. Raw tool/model text is deliberately excluded from this handwritten-controller replay. Report JSON contains every run, aggregates, comparisons and limitations.
 
+Git text normalization is disabled for this repository so checked-in byte hashes survive Windows/Linux clones. Preserve these evidence bytes; if a formatter changes them, retain the original run and publish a separately identified derived artifact instead of silently rehashing history.
+
 ## Free hosted GPU pilot — prepared, not executed
 
 [Open in Colab](https://colab.research.google.com/github/sourodeepkundu2025-hub/agent-reliability-lab/blob/main/notebooks/Colab_GPU_Pilot.ipynb) · [Kaggle notebook source](notebooks/Kaggle_GPU_Pilot.ipynb).
