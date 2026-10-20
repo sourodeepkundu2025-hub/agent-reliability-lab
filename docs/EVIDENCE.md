@@ -6,7 +6,7 @@ Executed with bundled CPython 3.12.14 on Windows (exact runtime also recorded in
 
 ## Commands actually run
 
-Working directory: this repository. On this machine `python` below was the executable at `C:/Users/320321824/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`.
+Working directory: this repository. Here `python` refers to the bundled CPython 3.12.14 runtime, not the laptop's older default executable. The private machine-specific installation path is omitted; use any supported Python 3.11+ runtime to run the current harness.
 
 ```sh
 python -m unittest discover -s tests -v
