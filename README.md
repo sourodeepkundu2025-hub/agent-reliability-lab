@@ -66,8 +66,8 @@ This opt-in pilot runs the pinned public `Qwen/Qwen3-0.6B` checkpoint on eight s
 
 `OllamaAdapter(model="explicit-installed-checkpoint")` implements an HTTP POST to a loopback `/api/generate`, parses the actual Ollama `done`/`response` envelope, and validates the returned action. It never reads credentials, ignores proxies and refuses redirects or non-loopback origins. Call counts include failed attempts. Extra caller sidecar fields are excluded from prompts; whitelisted task values themselves must still be synthetic/nonprivate. Unit tests inject an in-memory mock transport: **these tests are not real model inference**. The replay runner never instantiates this adapter. No model has been downloaded or called. A real agent comparison needs an integrated model controller, matched model/tool budgets and a separately preregistered checkpoint/dataset protocol.
 
-## Provenance and next experiments
+## Provenance
 
 All code and fixture logic was originally authored for this repository; no external code was copied or executed. The starting method idea is the owned EXP-001 contract: baseline parity, checkpoint recovery, output validation, budget sweeps, paired uncertainty and explicit abstention. No paper reproduction or published comparison is claimed. A primary-source literature ledger and nearest-method review must precede any novelty claim.
 
-The useful next experiments are: a fault-free null control, `checkpoint=false`, `validate_outputs=false` with guarded synthetic actions only, and matched budget sweeps. Save every configuration before running it and retain all outputs. Free Colab/Kaggle compute can support later model work but availability and real inference remain unverified. This code supports a six-month learning program at two hours per day; it is the first bounded engineering slice, not a completed six-month research result.
+Configurations, source identities and saved outputs document the implemented experiments. The checked-in model adapters and notebook scaffolding are not measured model results.
