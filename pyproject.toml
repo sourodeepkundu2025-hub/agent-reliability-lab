@@ -1,0 +1,9 @@
+[project]
+name = "agent-reliability-lab"
+version = "0.1.0"
+description = "Synthetic tool-recovery experiments with auditable budgets"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.unittest]
+start-directory = "tests"

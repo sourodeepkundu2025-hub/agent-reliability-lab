@@ -1,0 +1,41 @@
+{
+  "experiment_id": "EXP-001-amendment-validation-accounting",
+  "preregistered": "2026-10-20",
+  "mode": "deterministic-synthetic-replay",
+  "hypothesis": "Disabling validation can increase apparent success while introducing unsafe proposals; all invalid proposals must be counted even if transport would fail.",
+  "task_count_per_split": 40,
+  "evaluation_split": "tuning",
+  "seeds": [
+    11,
+    23,
+    47,
+    71,
+    101
+  ],
+  "policies": [
+    "no-retry",
+    "fixed-retry",
+    "step-retry",
+    "checkpoint-budget"
+  ],
+  "tool_call_budget": 18,
+  "fixed_retries": 2,
+  "fault_rate": 0.2,
+  "checkpoint": true,
+  "validate_outputs": false,
+  "bootstrap_repetitions": 2000,
+  "kill_criteria": [
+    "advantage disappears under matched budgets",
+    "oracle leakage",
+    "unsafe outcomes increase",
+    "no differentiation from nearest methods"
+  ],
+  "evidence_boundary": "Engineering replay on owned synthetic tasks. No language model, downloaded dataset, novel research method or external tool use.",
+  "protocol_amendment": {
+    "date": "2026-10-20",
+    "stage": "after independent safety-accounting review; before corrected execution",
+    "rationale": "Count invalid proposals before simulated transient failure, fixing historical undercount. Preserve prior artifact bytes. Include conventional step-retry.",
+    "prior_evidence": "artifacts/validation-disabled/report.json",
+    "test_status": "Tuning synthetic IDs only; content can overlap test despite disjoint IDs."
+  }
+}

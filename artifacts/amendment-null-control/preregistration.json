@@ -1,0 +1,13 @@
+{
+  "amendment": {
+    "date": "2026-10-20",
+    "expected_null": "step-retry and checkpoint-budget have equivalent recovery behavior under this environment.",
+    "prior_evidence": "artifacts/experiment/report.json",
+    "rationale": "Original fixed-retry restart strategy is an insufficient baseline for attributing gains to checkpoints. Add conventional step-retry retaining progress with the same total call budget and no extra oracle inputs.",
+    "stage": "after exploratory original runs, before amended execution",
+    "test_status": "Previously inspected synthetic test IDs reused for a paired engineering control; not a fresh confirmatory test."
+  },
+  "config_sha256": "3ea53f64354c7223064622f4b813596aca573caa095cc60601c7c14c99a4d50d",
+  "protocol": "EXP-001-amendment-null-control",
+  "state": "frozen before execution"
+}

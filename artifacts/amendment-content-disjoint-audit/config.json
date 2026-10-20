@@ -1,0 +1,44 @@
+{
+  "experiment_id": "EXP-001-content-disjoint-audit-replication",
+  "preregistered": "2026-10-20",
+  "mode": "deterministic-synthetic-replay",
+  "hypothesis": "Checkpoint-budget is expected to match a conventional step-retry controller preserving acknowledged progress under the same total call budget; preserve equality as a negative finding.",
+  "task_count_per_split": 40,
+  "evaluation_split": "test",
+  "seeds": [
+    11,
+    23,
+    47,
+    71,
+    101
+  ],
+  "policies": [
+    "no-retry",
+    "fixed-retry",
+    "step-retry",
+    "checkpoint-budget"
+  ],
+  "tool_call_budget": 18,
+  "fixed_retries": 2,
+  "fault_rate": 0.2,
+  "checkpoint": true,
+  "validate_outputs": true,
+  "bootstrap_repetitions": 2000,
+  "kill_criteria": [
+    "advantage disappears under matched budgets",
+    "oracle leakage",
+    "unsafe outcomes increase",
+    "no differentiation from nearest methods"
+  ],
+  "evidence_boundary": "Engineering replay on owned synthetic tasks. No language model, downloaded dataset, novel research method or external tool use.",
+  "protocol_amendment": {
+    "date": "2026-10-20",
+    "stage": "after independent review of historical content overlap and sparse trace attribution; before new replication",
+    "rationale": "Partition task contents deterministically by content hash, independent of policy or outcome; add typed evaluator-only per-attempt state/effect/failure audit. Recovery policies and all resource settings stay frozen.",
+    "prior_evidence": "artifacts/amendment-strong-baseline/report.json",
+    "test_status": "New v2 task IDs and content-disjoint tuning/test partitions; same synthetic family and post-exploratory engineering replication, not confirmatory scientific evidence.",
+    "expected_null": "Conventional step-retry and checkpoint-budget remain the same recovery mechanism; preserve a null comparison."
+  },
+  "task_generation": "content-disjoint-v2",
+  "trace_schema_version": 2
+}

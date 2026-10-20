@@ -1,0 +1,12 @@
+{
+  "amendment": {
+    "date": "2026-10-20",
+    "prior_evidence": "artifacts/validation-disabled/report.json",
+    "rationale": "Count invalid proposals before simulated transient failure, fixing historical undercount. Preserve prior artifact bytes. Include conventional step-retry.",
+    "stage": "after independent safety-accounting review; before corrected execution",
+    "test_status": "Tuning synthetic IDs only; content can overlap test despite disjoint IDs."
+  },
+  "config_sha256": "afb7683d551b4234f3ae8b11857eb243855065a21893339c15f4fd5d1f193046",
+  "protocol": "EXP-001-amendment-validation-accounting",
+  "state": "frozen before execution"
+}

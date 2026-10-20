@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-001-amendment-strong-baseline",
+  "preregistered": "2026-10-20",
+  "mode": "deterministic-synthetic-replay",
+  "hypothesis": "Checkpoint-budget is expected to match a conventional step-retry controller preserving acknowledged progress under the same total call budget; preserve equality as a negative finding.",
+  "task_count_per_split": 40,
+  "evaluation_split": "test",
+  "seeds": [
+    11,
+    23,
+    47,
+    71,
+    101
+  ],
+  "policies": [
+    "no-retry",
+    "fixed-retry",
+    "step-retry",
+    "checkpoint-budget"
+  ],
+  "tool_call_budget": 18,
+  "fixed_retries": 2,
+  "fault_rate": 0.2,
+  "checkpoint": true,
+  "validate_outputs": true,
+  "bootstrap_repetitions": 2000,
+  "kill_criteria": [
+    "advantage disappears under matched budgets",
+    "oracle leakage",
+    "unsafe outcomes increase",
+    "no differentiation from nearest methods"
+  ],
+  "evidence_boundary": "Engineering replay on owned synthetic tasks. No language model, downloaded dataset, novel research method or external tool use.",
+  "protocol_amendment": {
+    "date": "2026-10-20",
+    "stage": "after exploratory original runs, before amended execution",
+    "rationale": "Original fixed-retry restart strategy is an insufficient baseline for attributing gains to checkpoints. Add conventional step-retry retaining progress with the same total call budget and no extra oracle inputs.",
+    "prior_evidence": "artifacts/experiment/report.json",
+    "test_status": "Previously inspected synthetic test IDs reused for a paired engineering control; not a fresh confirmatory test.",
+    "expected_null": "step-retry and checkpoint-budget have equivalent recovery behavior under this environment."
+  }
+}
