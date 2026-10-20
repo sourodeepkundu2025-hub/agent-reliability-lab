@@ -1,0 +1,13 @@
+{
+  "amendment": {
+    "date": "2026-10-20",
+    "expected_null": "Conventional step-retry and checkpoint-budget remain the same recovery mechanism; preserve a null comparison.",
+    "prior_evidence": "artifacts/amendment-strong-baseline/report.json",
+    "rationale": "Partition task contents deterministically by content hash, independent of policy or outcome; add typed evaluator-only per-attempt state/effect/failure audit. Recovery policies and all resource settings stay frozen.",
+    "stage": "after independent review of historical content overlap and sparse trace attribution; before new replication",
+    "test_status": "New v2 task IDs and content-disjoint tuning/test partitions; same synthetic family and post-exploratory engineering replication, not confirmatory scientific evidence."
+  },
+  "config_sha256": "5e17845986106d3e6bccc542a25272106730dcf270d053d8a25dfa70b90cc995",
+  "protocol": "EXP-001-content-disjoint-audit-replication",
+  "state": "frozen before execution"
+}

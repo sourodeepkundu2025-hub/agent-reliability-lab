@@ -1,0 +1,33 @@
+{
+  "experiment_id": "EXP-001-checkpoint-disabled",
+  "preregistered": "2026-10-20",
+  "mode": "deterministic-synthetic-replay",
+  "hypothesis": "Preserving acknowledged progress can recover more tasks within the same tool-call budget than restarting after failures.",
+  "task_count_per_split": 40,
+  "evaluation_split": "tuning",
+  "seeds": [
+    11,
+    23,
+    47,
+    71,
+    101
+  ],
+  "policies": [
+    "no-retry",
+    "fixed-retry",
+    "checkpoint-budget"
+  ],
+  "tool_call_budget": 18,
+  "fixed_retries": 2,
+  "fault_rate": 0.2,
+  "checkpoint": false,
+  "validate_outputs": true,
+  "bootstrap_repetitions": 2000,
+  "kill_criteria": [
+    "advantage disappears under matched budgets",
+    "oracle leakage",
+    "unsafe outcomes increase",
+    "no differentiation from nearest methods"
+  ],
+  "evidence_boundary": "Engineering replay on owned synthetic tasks. No language model, downloaded dataset, novel research method or external tool use."
+}

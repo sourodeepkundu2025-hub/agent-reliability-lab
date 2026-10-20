@@ -1,0 +1,732 @@
+{
+  "cross_split_unique_content_overlap": 0,
+  "generation": "content-disjoint-v2",
+  "kind": "synthetic",
+  "splits": {
+    "test": [
+      {
+        "increments": [
+          5,
+          1
+        ],
+        "task_id": "test-v2-0000"
+      },
+      {
+        "increments": [
+          4,
+          2,
+          4
+        ],
+        "task_id": "test-v2-0001"
+      },
+      {
+        "increments": [
+          6,
+          1,
+          2,
+          6
+        ],
+        "task_id": "test-v2-0002"
+      },
+      {
+        "increments": [
+          4,
+          1,
+          7,
+          3,
+          7
+        ],
+        "task_id": "test-v2-0003"
+      },
+      {
+        "increments": [
+          8,
+          2,
+          9,
+          5,
+          7,
+          1
+        ],
+        "task_id": "test-v2-0004"
+      },
+      {
+        "increments": [
+          9,
+          8
+        ],
+        "task_id": "test-v2-0005"
+      },
+      {
+        "increments": [
+          3,
+          1,
+          2
+        ],
+        "task_id": "test-v2-0006"
+      },
+      {
+        "increments": [
+          6,
+          7,
+          3,
+          2
+        ],
+        "task_id": "test-v2-0007"
+      },
+      {
+        "increments": [
+          1,
+          2,
+          2,
+          5,
+          6
+        ],
+        "task_id": "test-v2-0008"
+      },
+      {
+        "increments": [
+          6,
+          4,
+          6,
+          2,
+          2,
+          8
+        ],
+        "task_id": "test-v2-0009"
+      },
+      {
+        "increments": [
+          9,
+          5
+        ],
+        "task_id": "test-v2-0010"
+      },
+      {
+        "increments": [
+          1,
+          3,
+          8
+        ],
+        "task_id": "test-v2-0011"
+      },
+      {
+        "increments": [
+          2,
+          2,
+          9,
+          2
+        ],
+        "task_id": "test-v2-0012"
+      },
+      {
+        "increments": [
+          2,
+          7,
+          3,
+          6,
+          2
+        ],
+        "task_id": "test-v2-0013"
+      },
+      {
+        "increments": [
+          7,
+          8,
+          2,
+          3,
+          3,
+          7
+        ],
+        "task_id": "test-v2-0014"
+      },
+      {
+        "increments": [
+          3,
+          4
+        ],
+        "task_id": "test-v2-0015"
+      },
+      {
+        "increments": [
+          8,
+          6,
+          1
+        ],
+        "task_id": "test-v2-0016"
+      },
+      {
+        "increments": [
+          7,
+          7,
+          9,
+          5
+        ],
+        "task_id": "test-v2-0017"
+      },
+      {
+        "increments": [
+          9,
+          4,
+          3,
+          6,
+          9
+        ],
+        "task_id": "test-v2-0018"
+      },
+      {
+        "increments": [
+          5,
+          8,
+          1,
+          3,
+          8,
+          4
+        ],
+        "task_id": "test-v2-0019"
+      },
+      {
+        "increments": [
+          7,
+          4
+        ],
+        "task_id": "test-v2-0020"
+      },
+      {
+        "increments": [
+          8,
+          3,
+          1
+        ],
+        "task_id": "test-v2-0021"
+      },
+      {
+        "increments": [
+          8,
+          6,
+          9,
+          6
+        ],
+        "task_id": "test-v2-0022"
+      },
+      {
+        "increments": [
+          3,
+          9,
+          5,
+          8,
+          8
+        ],
+        "task_id": "test-v2-0023"
+      },
+      {
+        "increments": [
+          9,
+          5,
+          8,
+          3,
+          6,
+          4
+        ],
+        "task_id": "test-v2-0024"
+      },
+      {
+        "increments": [
+          8,
+          1
+        ],
+        "task_id": "test-v2-0025"
+      },
+      {
+        "increments": [
+          4,
+          7,
+          8
+        ],
+        "task_id": "test-v2-0026"
+      },
+      {
+        "increments": [
+          4,
+          3,
+          2,
+          8
+        ],
+        "task_id": "test-v2-0027"
+      },
+      {
+        "increments": [
+          9,
+          1,
+          2,
+          1,
+          4
+        ],
+        "task_id": "test-v2-0028"
+      },
+      {
+        "increments": [
+          5,
+          3,
+          7,
+          6,
+          8,
+          1
+        ],
+        "task_id": "test-v2-0029"
+      },
+      {
+        "increments": [
+          3,
+          2
+        ],
+        "task_id": "test-v2-0030"
+      },
+      {
+        "increments": [
+          6,
+          2,
+          9
+        ],
+        "task_id": "test-v2-0031"
+      },
+      {
+        "increments": [
+          1,
+          7,
+          8,
+          3
+        ],
+        "task_id": "test-v2-0032"
+      },
+      {
+        "increments": [
+          9,
+          4,
+          4,
+          6,
+          9
+        ],
+        "task_id": "test-v2-0033"
+      },
+      {
+        "increments": [
+          8,
+          7,
+          7,
+          2,
+          1,
+          8
+        ],
+        "task_id": "test-v2-0034"
+      },
+      {
+        "increments": [
+          1,
+          3
+        ],
+        "task_id": "test-v2-0035"
+      },
+      {
+        "increments": [
+          6,
+          5,
+          9
+        ],
+        "task_id": "test-v2-0036"
+      },
+      {
+        "increments": [
+          3,
+          3,
+          7,
+          5
+        ],
+        "task_id": "test-v2-0037"
+      },
+      {
+        "increments": [
+          2,
+          5,
+          6,
+          7,
+          4
+        ],
+        "task_id": "test-v2-0038"
+      },
+      {
+        "increments": [
+          2,
+          2,
+          5,
+          7,
+          8,
+          5
+        ],
+        "task_id": "test-v2-0039"
+      }
+    ],
+    "tuning": [
+      {
+        "increments": [
+          9,
+          6
+        ],
+        "task_id": "tuning-v2-0000"
+      },
+      {
+        "increments": [
+          8,
+          3,
+          3
+        ],
+        "task_id": "tuning-v2-0001"
+      },
+      {
+        "increments": [
+          1,
+          2,
+          2,
+          6
+        ],
+        "task_id": "tuning-v2-0002"
+      },
+      {
+        "increments": [
+          6,
+          4,
+          7,
+          1,
+          6
+        ],
+        "task_id": "tuning-v2-0003"
+      },
+      {
+        "increments": [
+          4,
+          5,
+          2,
+          7,
+          8,
+          3
+        ],
+        "task_id": "tuning-v2-0004"
+      },
+      {
+        "increments": [
+          5,
+          8
+        ],
+        "task_id": "tuning-v2-0005"
+      },
+      {
+        "increments": [
+          9,
+          4,
+          3
+        ],
+        "task_id": "tuning-v2-0006"
+      },
+      {
+        "increments": [
+          6,
+          3,
+          7,
+          1
+        ],
+        "task_id": "tuning-v2-0007"
+      },
+      {
+        "increments": [
+          4,
+          6,
+          7,
+          3,
+          4
+        ],
+        "task_id": "tuning-v2-0008"
+      },
+      {
+        "increments": [
+          8,
+          6,
+          5,
+          3,
+          3,
+          1
+        ],
+        "task_id": "tuning-v2-0009"
+      },
+      {
+        "increments": [
+          9,
+          3
+        ],
+        "task_id": "tuning-v2-0010"
+      },
+      {
+        "increments": [
+          8,
+          9,
+          8
+        ],
+        "task_id": "tuning-v2-0011"
+      },
+      {
+        "increments": [
+          4,
+          5,
+          8,
+          1
+        ],
+        "task_id": "tuning-v2-0012"
+      },
+      {
+        "increments": [
+          5,
+          5,
+          3,
+          4,
+          3
+        ],
+        "task_id": "tuning-v2-0013"
+      },
+      {
+        "increments": [
+          9,
+          5,
+          7,
+          4,
+          6,
+          5
+        ],
+        "task_id": "tuning-v2-0014"
+      },
+      {
+        "increments": [
+          6,
+          5
+        ],
+        "task_id": "tuning-v2-0015"
+      },
+      {
+        "increments": [
+          4,
+          5,
+          6
+        ],
+        "task_id": "tuning-v2-0016"
+      },
+      {
+        "increments": [
+          9,
+          7,
+          5,
+          6
+        ],
+        "task_id": "tuning-v2-0017"
+      },
+      {
+        "increments": [
+          5,
+          8,
+          7,
+          6,
+          2
+        ],
+        "task_id": "tuning-v2-0018"
+      },
+      {
+        "increments": [
+          9,
+          7,
+          1,
+          8,
+          1,
+          7
+        ],
+        "task_id": "tuning-v2-0019"
+      },
+      {
+        "increments": [
+          3,
+          5
+        ],
+        "task_id": "tuning-v2-0020"
+      },
+      {
+        "increments": [
+          3,
+          7,
+          7
+        ],
+        "task_id": "tuning-v2-0021"
+      },
+      {
+        "increments": [
+          3,
+          4,
+          1,
+          8
+        ],
+        "task_id": "tuning-v2-0022"
+      },
+      {
+        "increments": [
+          5,
+          2,
+          1,
+          5,
+          7
+        ],
+        "task_id": "tuning-v2-0023"
+      },
+      {
+        "increments": [
+          7,
+          3,
+          4,
+          3,
+          4,
+          3
+        ],
+        "task_id": "tuning-v2-0024"
+      },
+      {
+        "increments": [
+          3,
+          7
+        ],
+        "task_id": "tuning-v2-0025"
+      },
+      {
+        "increments": [
+          4,
+          4,
+          7
+        ],
+        "task_id": "tuning-v2-0026"
+      },
+      {
+        "increments": [
+          1,
+          9,
+          4,
+          9
+        ],
+        "task_id": "tuning-v2-0027"
+      },
+      {
+        "increments": [
+          2,
+          5,
+          3,
+          7,
+          5
+        ],
+        "task_id": "tuning-v2-0028"
+      },
+      {
+        "increments": [
+          6,
+          2,
+          3,
+          6,
+          6,
+          8
+        ],
+        "task_id": "tuning-v2-0029"
+      },
+      {
+        "increments": [
+          5,
+          8
+        ],
+        "task_id": "tuning-v2-0030"
+      },
+      {
+        "increments": [
+          4,
+          4,
+          4
+        ],
+        "task_id": "tuning-v2-0031"
+      },
+      {
+        "increments": [
+          2,
+          4,
+          3,
+          5
+        ],
+        "task_id": "tuning-v2-0032"
+      },
+      {
+        "increments": [
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        "task_id": "tuning-v2-0033"
+      },
+      {
+        "increments": [
+          5,
+          4,
+          6,
+          1,
+          7,
+          2
+        ],
+        "task_id": "tuning-v2-0034"
+      },
+      {
+        "increments": [
+          9,
+          6
+        ],
+        "task_id": "tuning-v2-0035"
+      },
+      {
+        "increments": [
+          6,
+          1,
+          1
+        ],
+        "task_id": "tuning-v2-0036"
+      },
+      {
+        "increments": [
+          2,
+          9,
+          1,
+          6
+        ],
+        "task_id": "tuning-v2-0037"
+      },
+      {
+        "increments": [
+          7,
+          7,
+          2,
+          2,
+          6
+        ],
+        "task_id": "tuning-v2-0038"
+      },
+      {
+        "increments": [
+          5,
+          2,
+          9,
+          1,
+          5,
+          5
+        ],
+        "task_id": "tuning-v2-0039"
+      }
+    ]
+  },
+  "tuning_status": "not used to select this baseline configuration"
+}
