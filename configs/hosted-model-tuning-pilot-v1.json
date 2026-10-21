@@ -1,0 +1,17 @@
+{
+  "protocol_id": "MP-QWEN-HOSTED-TUNING-PILOT-001",
+  "frozen_on": "2026-10-21",
+  "execution_status": "prepared-not-executed",
+  "task_generation": "content-disjoint-v2",
+  "task_count_per_split": 4,
+  "evaluation_split": "tuning",
+  "seeds": [11, 23],
+  "policies": ["step-retry", "model-step-retry"],
+  "tool_call_budget": 18,
+  "model_call_budget": 8,
+  "token_budget": 8000,
+  "max_output_tokens": 96,
+  "fault_rate": 0.2,
+  "bootstrap_repetitions": 2000,
+  "evidence_boundary": "Small tuning-only integration check; no held-out generalization, novelty, equal-compute or six-month completion claim. Frozen model/checkpoint in qwen_provider.py. All malformed and negative outputs retained."
+}

@@ -1,0 +1,42 @@
+{
+  "protocol_id": "MP-001-unit-mock-validation-v1",
+  "frozen_on": "2026-10-21",
+  "execution_status": "owned deterministic fixture only; no LLM model inference",
+  "task_generation": "content-disjoint-v2",
+  "task_count_per_split": 8,
+  "evaluation_split": "tuning",
+  "seeds": [
+    11,
+    23
+  ],
+  "policies": [
+    "step-retry",
+    "model-step-retry"
+  ],
+  "tool_call_budget": 18,
+  "model_call_budget": 12,
+  "token_budget": 12000,
+  "max_output_tokens": 96,
+  "fault_rate": 0.2,
+  "bootstrap_repetitions": 2000,
+  "provider": {
+    "checkpoint": null,
+    "checkpoint_revision": null,
+    "tokenizer_revision": null,
+    "evidence_mode": "unit-mock-validation",
+    "token_units": "artificial UTF-8-length units; not real tokenizer tokens"
+  },
+  "evidence_boundary": "Frozen model-controller engineering protocol; actual model/checkpoint/hosted execution requires reviewed root integration. Mocks are not LLM results.",
+  "null_criteria": [
+    "candidate matches or underperforms conventional deterministic step-retry",
+    "no distinct mechanism beyond schema and retry integration"
+  ],
+  "kill_criteria": [
+    "unsafe actions increase",
+    "oracle leakage",
+    "unbounded or omitted usage",
+    "missing malformed outputs",
+    "changed frozen comparator without amendment"
+  ],
+  "execution_mode": "unit-mock-validation"
+}
